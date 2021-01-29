@@ -73,13 +73,13 @@ function ageInString() {
     //show result on actual page
     var h3 = document.createElement('h3');
     var answer = document.createTextNode(ageString);    //definisce il risultato
-    h3.setAttribute('id', 'ageInDays');
+    h3.setAttribute('id', 'ageString');
     h3.appendChild(answer);                             //applica il risultato all'elemento l'h3
     document.getElementById('result').appendChild(h3);  //applica l'h3(e quindi il risultato) all'id result(vedi HTML)      
 }
 
 function reset() {
-    document.getElementById('result').remove();         //rimuove l'id result(vedi HTML) e quindi l'h3 contenente il risultato
+    document.getElementById('ageString').remove();         //rimuove l'id result(vedi HTML) e quindi l'h3 contenente il risultato
 }
 
 //Your Age In Days
@@ -139,5 +139,6 @@ function ageInDays() {
 }
 
 function reset2() {
-    document.getElementById('days-result').remove();         //rimuove l'id result(vedi HTML) e quindi l'h3 contenente il risultato
+    document.getElementById('ageInDays').remove();         //rimuove l'id result(vedi HTML) e quindi l'h3 contenente il risultato
+    //location.reload();
 }
